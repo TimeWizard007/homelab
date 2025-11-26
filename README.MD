@@ -1,12 +1,16 @@
-<h1 align="center">🏠 Homelab Architecture & Infrastructure</h1>
+<h1 align="center">🏠 Homelab – Dokumentacja i Architektura</h1>
+<h2 align="center">🇬🇧 Homelab – Architecture & Infrastructure</h2>
 
 <p align="center">
-  <strong>High Availability • Virtualization • Storage • Automation • R&D</strong>
+  🇵🇱 Dokumentacja dostępna w dwóch językach (PL/EN). Szczegóły poniżej.<br>
+  🇬🇧 Documentation available in two languages (PL/EN). Details below.
 </p>
 
 ---
 
-# 🇵🇱 Dokumentacja (PL)
+# 🇵🇱 Homelab – Architektura & Infrastruktura
+
+**Wysoka dostępność • Wirtualizacja • Storage • Automatyzacja • R&D**
 
 To repozytorium opisuje mój **homelab**, czyli środowisko R&D do testowania:
 
@@ -17,19 +21,15 @@ To repozytorium opisuje mój **homelab**, czyli środowisko R&D do testowania:
 - automatyzacji i DevOps/SRE,
 - segmentacji i architektury sieciowej.
 
-Pełny opis w języku polskim znajdziesz tutaj:
+Pełny opis po polsku znajdziesz tutaj:
 
 ➡️ **[README_PL.md](README_PL.md)**
 
-### Skrót struktury repozytorium:
-- `infra/` – Proxmox, Ceph, TrueNAS, sieć  
-- `docker/` – Traefik, OIDC, stacki aplikacji  
-- `docs/` – dokumentacja hardware, storage, network  
-- `diagrams/` – diagramy architektury  
-
 ---
 
-# 🇬🇧 Documentation (EN)
+# 🇬🇧 Homelab – Architecture & Infrastructure
+
+**High Availability • Virtualization • Storage • Automation • R&D**
 
 This repository documents my **homelab** — an R&D environment used for testing:
 
@@ -40,15 +40,18 @@ This repository documents my **homelab** — an R&D environment used for testing
 - automation and DevOps/SRE tooling,  
 - network segmentation and infrastructure design.
 
-Full English documentation is available here:
+Full English version:
 
 ➡️ **[README_EN.md](README_EN.md)**
 
-### Repository structure overview:
-- `infra/` – Proxmox, Ceph, TrueNAS, networking  
-- `docker/` – Traefik, OIDC, service stacks  
-- `docs/` – hardware, storage, network documentation  
-- `diagrams/` – architecture diagrams  
+---
+
+# 📁 Struktura repozytorium / Repository structure
+
+- `infra/` – Proxmox, Ceph, TrueNAS, sieć / networking  
+- `docker/` – Traefik, OIDC, stacki / service stacks  
+- `docs/` – dokumentacja hardware, storage, network  
+- `diagrams/` – diagramy architektury  
 
 ---
 
