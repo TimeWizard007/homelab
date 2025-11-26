@@ -1,105 +1,62 @@
 <h1 align="center">🏠 Homelab Architecture & Infrastructure</h1>
 
 <p align="center">
-  <strong>R&D • High Availability • Virtualization • Storage • Automation</strong><br>
-  Dokumentacja mojego środowiska badawczo-rozwojowego (homelab) zaprojektowanego 
-  do testowania architektur produkcyjnych, automatyzacji oraz technologii DevOps / SRE.
+  <strong>High Availability • Virtualization • Storage • Automation • R&D</strong>
 </p>
 
 ---
 
-## 🇵🇱 **Opis (PL)**
+# 🇵🇱 Dokumentacja (PL)
 
-Mój homelab pełni funkcję **profesjonalnego środowiska testowego**, w którym weryfikuję
-architektury wysokiej dostępności, platformy wirtualizacji, rozwiązania storage,
-narzędzia DevOps oraz automatyzację.
+To repozytorium opisuje mój **homelab**, czyli środowisko R&D do testowania:
 
-Środowisko jest zbudowane w oparciu o **Proxmox VE, Ceph, TrueNAS, Docker, Traefik, OIDC**
-i rozbudowaną segmentację sieciową. Służy jako:
+- architektur wysokiej dostępności (HA),
+- wirtualizacji (Proxmox),
+- storage (Ceph, TrueNAS, ZFS),
+- konteneryzacji (Docker, Traefik, OIDC),
+- automatyzacji i DevOps/SRE,
+- segmentacji i architektury sieciowej.
 
-- platforma do testowania przed produkcją,  
-- laboratorium HA (compute / storage / network),  
-- środowisko CI/CD, skryptów i automatyzacji,  
-- repozytorium dokumentacji technicznej i diagramów,  
-- poligon do wdrażania rozwiązań klasy enterprise.  
+Pełny opis w języku polskim znajdziesz tutaj:
 
----
+➡️ **[README_PL.md](README_PL.md)**
 
-## 🇬🇧 **Overview (EN)**
-
-This homelab is a **professional R&D environment** used for validating high-availability
-architectures, virtualization stacks, storage systems, container platforms, automation
-and DevOps/SRE tooling.
-
-It is built on **Proxmox VE, Ceph, TrueNAS, Docker, Traefik, OIDC** with a fully segmented network.
-The purpose of the lab:
-
-- pre-production testing,  
-- HA validation (compute / storage / networking),  
-- CI/CD, scripting and automation development,  
-- infrastructure documentation and diagrams,  
-- experimentation with enterprise-grade architecture designs.  
+### Skrót struktury repozytorium:
+- `infra/` – Proxmox, Ceph, TrueNAS, sieć  
+- `docker/` – Traefik, OIDC, stacki aplikacji  
+- `docs/` – dokumentacja hardware, storage, network  
+- `diagrams/` – diagramy architektury  
 
 ---
 
-# 🏗 **Główne elementy architektury / Key Architecture Components**
+# 🇬🇧 Documentation (EN)
 
-### **🖥 Compute – Proxmox VE Cluster**
-- 2-node cluster with HA  
-- external quorum node  
-- VMs + LXC workloads  
-- integrated with Ceph & TrueNAS  
+This repository documents my **homelab** — an R&D environment used for testing:
 
-### **💾 Storage – Ceph + TrueNAS + ZFS**
-- Ceph for VM volumes & high-availability storage  
-- TrueNAS for NAS, backup & replication  
-- ZFS snapshots, multi-tier: NVMe/SSD/HDD  
+- high availability architectures,  
+- virtualization (Proxmox),  
+- storage (Ceph, TrueNAS, ZFS),  
+- container platforms (Docker, Traefik, OIDC),  
+- automation and DevOps/SRE tooling,  
+- network segmentation and infrastructure design.
 
-### **🌐 Networking – VLAN, routing, firewalls**
-- MGMT / STORAGE / SERVERS / DMZ / LAB VLANs  
-- MikroTik / OPNsense/pfSense routing  
-- dedicated storage networks  
-- WireGuard / IPsec VPN  
+Full English documentation is available here:
 
-### **🐳 Container Platform – Docker**
-- Traefik reverse proxy (TLS + OIDC)  
-- structured stacks per service  
-- monitoring/log integration  
-- secure, isolated environments  
+➡️ **[README_EN.md](README_EN.md)**
 
-### **📈 Monitoring & Observability**
-- Prometheus + Alertmanager  
-- Grafana dashboards  
-- Zabbix / Wazuh  
-- central logging (ELK/Graylog/Wazuh)  
+### Repository structure overview:
+- `infra/` – Proxmox, Ceph, TrueNAS, networking  
+- `docker/` – Traefik, OIDC, service stacks  
+- `docs/` – hardware, storage, network documentation  
+- `diagrams/` – architecture diagrams  
 
 ---
 
-# 📁 **Struktura repozytorium / Repository structure**
+# 📊 Overview diagram
+`diagrams/homelab-overview.png`
 
-```text
-homelab/
-│
-├── README.md                 → główny opis
-├── diagrams/
-│   ├── homelab-overview.png
-│   └── ceph-topology.png
-│
-├── infra/
-│   ├── proxmox/
-│   ├── ceph/
-│   ├── truenas/
-│   └── network/
-│
-├── ansible/                  → playbooki automatyzacji (w przyszłości)
-│
-├── docker/
-│   ├── traefik/
-│   ├── autentic/
-│   └── stacks/
-│
-└── docs/
-    ├── hardware.md
-    ├── network.md
-    ├── storage.md
-    └── services.md
+---
+
+<p align="center">
+  <sub>© 2025 Michał Watkowski — Homelab Documentation</sub>
+</p>
