@@ -25,7 +25,7 @@ Pełny opis po polsku 👉 **[README_PL.md](README_PL.md)**
 
 ---
 
-## 📁 Struktura repozytorium (PL)
+## 📁 Struktura repozytorium
 
 - **infra/** – konfiguracja Proxmox, Ceph, TrueNAS, sieć  
 - **docker/** – Traefik, OIDC, stacki aplikacji  
@@ -34,7 +34,7 @@ Pełny opis po polsku 👉 **[README_PL.md](README_PL.md)**
 
 ---
 
-## 📊 Diagram architektury (PL)
+## 📊 Diagram architektury
 
 Diagram główny:  
 `diagrams/homelab-overview.png`
@@ -58,7 +58,7 @@ Full English version 👉 **[README_EN.md](README_EN.md)**
 
 ---
 
-## 📁 Repository structure (EN)
+## 📁 Repository structure
 
 - **infra/** – Proxmox, Ceph, TrueNAS, networking  
 - **docker/** – Traefik, OIDC, service stacks  
@@ -67,7 +67,7 @@ Full English version 👉 **[README_EN.md](README_EN.md)**
 
 ---
 
-## 📊 Architecture diagram (EN)
+## 📊 Architecture diagram
 
 Main diagram:  
 `diagrams/homelab-overview.png`
