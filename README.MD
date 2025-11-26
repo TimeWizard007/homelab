@@ -1,7 +1,6 @@
 <h1 align="center">🏠 Homelab – Dokumentacja i Architektura</h1>
 <h1 align="center">🇬🇧 Homelab – Architecture & Infrastructure</h1>
 
-
 <p align="center">
   🇵🇱 Dokumentacja dostępna w dwóch językach (PL/EN). Szczegóły poniżej.<br>
   🇬🇧 Documentation available in two languages (PL/EN). Details below.
@@ -13,18 +12,32 @@
 
 **Wysoka dostępność • Wirtualizacja • Storage • Automatyzacja • R&D**
 
-To repozytorium opisuje mój **homelab**, czyli środowisko R&D do testowania:
+Moje środowisko R&D służy do testowania:
 
 - architektur wysokiej dostępności (HA),
-- wirtualizacji (Proxmox),
+- wirtualizacji (Proxmox VE),
 - storage (Ceph, TrueNAS, ZFS),
 - konteneryzacji (Docker, Traefik, OIDC),
-- automatyzacji i DevOps/SRE,
-- segmentacji i architektury sieciowej.
+- automatyzacji (CI/CD, skrypty),
+- architektury sieciowej i segmentacji VLAN.
 
-Pełny opis po polsku znajdziesz tutaj:
+Pełny opis po polsku 👉 **[README_PL.md](README_PL.md)**
 
-➡️ **[README_PL.md](README_PL.md)**
+---
+
+## 📁 Struktura repozytorium (PL)
+
+- **infra/** – konfiguracja Proxmox, Ceph, TrueNAS, sieć  
+- **docker/** – Traefik, OIDC, stacki aplikacji  
+- **docs/** – dokumentacja sprzętu, sieci i storage  
+- **diagrams/** – diagramy architektury homelabu  
+
+---
+
+## 📊 Diagram architektury (PL)
+
+Diagram główny:  
+`diagrams/homelab-overview.png`
 
 ---
 
@@ -32,31 +45,31 @@ Pełny opis po polsku znajdziesz tutaj:
 
 **High Availability • Virtualization • Storage • Automation • R&D**
 
-This repository documents my **homelab** — an R&D environment used for testing:
+My R&D environment is used for testing:
 
-- high availability architectures,  
-- virtualization (Proxmox),  
-- storage (Ceph, TrueNAS, ZFS),  
-- container platforms (Docker, Traefik, OIDC),  
-- automation and DevOps/SRE tooling,  
-- network segmentation and infrastructure design.
+- high-availability architectures,
+- virtualization (Proxmox VE),
+- storage solutions (Ceph, TrueNAS, ZFS),
+- container platforms (Docker, Traefik, OIDC),
+- automation (CI/CD, scripting),
+- network design and VLAN segmentation.
 
-Full English version:
-
-➡️ **[README_EN.md](README_EN.md)**
+Full English version 👉 **[README_EN.md](README_EN.md)**
 
 ---
 
-# 📁 Struktura repozytorium / Repository structure
+## 📁 Repository structure (EN)
 
-- `infra/` – Proxmox, Ceph, TrueNAS, sieć / networking  
-- `docker/` – Traefik, OIDC, stacki / service stacks  
-- `docs/` – dokumentacja hardware, storage, network  
-- `diagrams/` – diagramy architektury  
+- **infra/** – Proxmox, Ceph, TrueNAS, networking  
+- **docker/** – Traefik, OIDC, service stacks  
+- **docs/** – hardware, network, storage documentation  
+- **diagrams/** – architecture diagrams  
 
 ---
 
-# 📊 Overview diagram
+## 📊 Architecture diagram (EN)
+
+Main diagram:  
 `diagrams/homelab-overview.png`
 
 ---
