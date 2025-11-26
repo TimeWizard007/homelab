@@ -1,5 +1,5 @@
-<h1 align="center">🏠 Homelab – Dokumentacja i Architektura</h1>
-<h1 align="center">🇬🇧 Homelab – Architecture & Infrastructure</h2>
+<h1 align="center">🇵🇱🏠 Homelab – Dokumentacja i Architektura</h1>
+<h1 align="center">🇬🇧🏠 Homelab – Architecture & Infrastructure</h2>
 
 <p align="center">
   🇵🇱 Dokumentacja dostępna w dwóch językach (PL/EN). Szczegóły poniżej.<br>
