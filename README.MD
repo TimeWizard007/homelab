@@ -1,4 +1,5 @@
-<h1 align="center">🇵🇱🏠 Homelab – Dokumentacja i Architektura / 🇬🇧🏠 Homelab – Architecture & Infrastructure</h1>
+<h1 align="center">🇵🇱🏠 Homelab – Dokumentacja i Architektura
+🇬🇧🏠 Homelab – Architecture & Infrastructure</h1>
 <h1 align="center"></h2>
 
 <p align="center">
